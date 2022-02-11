@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+}
+
+@media (min-width: 112.5em) {
+  html {
+    font-size: 110%;
+  }
+}
+
+@media (max-width: 75em) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 56.25em) {
+  html {
+    font-size: 70%;
+  }
+}
+
+@media (max-width: 37.5em) {
+  html {
+    font-size: 66%;
+  }
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #0d192b;
+  font-family: "Outfit", sans-serif;
+}
+
+@media (max-width: 56.25em) {
+  body {
+    padding: 0;
+  }
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  color: white;
+  text-align: center;
+}
+
+.card {
+  width: 21rem;
+  height: auto;
+  background-color: #14253d;
+  border-radius: 20px;
+  color: white;
+  padding: 1.5rem;
+}
+
+@media (max-width: 23.45em) {
+  .card {
+    width: 32rem;
+    padding: 2rem;
+  }
+}
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.card__image {
+  width: 18rem;
+  border-radius: 15px;
+}
+
+@media (max-width: 23.45em) {
+  .card__image {
+    width: 28rem;
+  }
+}
+
+.card__image:hover {
+  color: #00fff7;
+  cursor: pointer;
+}
+
+.card__image:hover::before {
+  content: '';
+  background-image: url("../images/image-equilibrium.jpg"), -webkit-gradient(linear, left top, right top, from(transparent), to(#00fff7));
+  background-image: url("../images/image-equilibrium.jpg"), linear-gradient(to right, transparent 0%, #00fff7 100%);
+}
+
+.card__image:hover::after {
+  content: '';
+  background-image: url("../images/image-equilibrium.jpg"), -webkit-gradient(linear, left top, right top, from(transparent), to(#00fff7));
+  background-image: url("../images/image-equilibrium.jpg"), linear-gradient(to right, transparent 0%, #00fff7 100%);
+}
+
+.card__title {
+  color: white;
+  font-weight: 600;
+  padding: 1rem 0;
+}
+
+@media (max-width: 23.45em) {
+  .card__title {
+    font-size: 2rem;
+    padding-top: 2rem;
+  }
+}
+
+.card__title:hover {
+  color: #00fff7;
+  cursor: pointer;
+}
+
+.card__detail {
+  color: #8bacda;
+  font-size: 18px;
+  max-width: 80%;
+}
+
+@media (max-width: 23.45em) {
+  .card__detail {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    max-width: 100%;
+  }
+}
+
+.card__information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 1.2rem 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card__information--price {
+  color: #00fff7;
+  margin: auto 0;
+}
+
+.card__information--price--image {
+  height: auto;
+}
+
+.card__information--price span {
+  font-weight: 600;
+}
+
+@media (max-width: 23.45em) {
+  .card__information--price {
+    font-size: 18px;
+  }
+}
+
+.card__information--date {
+  color: #8bacda;
+}
+
+.card__information--date span {
+  font-weight: 400;
+}
+
+@media (max-width: 23.45em) {
+  .card__information--date {
+    font-size: 18px;
+  }
+}
+
+.card__creator {
+  color: #8bacda;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.card__creator--image {
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 15%;
+  margin: 1rem 1rem 1rem 0;
+}
+
+.card__creator--information span {
+  color: white;
+}
+
+.card__creator--information span:hover {
+  color: #00fff7;
+  cursor: pointer;
+}
+
+@media (max-width: 23.45em) {
+  .card__creator--information {
+    font-size: 18px;
+  }
+}
+
+.card__seperator {
+  width: 100%;
+  height: 2px;
+  background-color: #2f415b;
+  margin: 0.75rem auto;
+}
+/*# sourceMappingURL=style.css.map */

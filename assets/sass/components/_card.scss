@@ -1,0 +1,125 @@
+.card {
+	width: 21rem;
+	height: auto;
+	//max-width: 21rem;
+	background-color: $neutral-color-card-bg;
+	border-radius: 20px;
+	color: $neutral-color-white;
+	@media (max-width: 23.45em) {
+		width: 32rem;
+		padding: 2rem;
+	}
+	@include positionAbsoluteCenter;
+	padding: 1.5rem;
+	// display: inline-block;
+	&__image {
+		width: 18rem;
+		border-radius: 15px;
+		@media (max-width: 23.45em) {
+			width: 28rem;
+		}
+		&:hover {
+			//background-color: $primary-color-cyan;
+			color: $primary-color-cyan;
+			cursor: pointer;
+			&::before {
+				content: '';
+				background-image: url('../images/image-equilibrium.jpg'),
+					linear-gradient(to right, transparent 0%, $primary-color-cyan 100%);
+			}
+			&::after {
+				content: '';
+				background-image: url('../images/image-equilibrium.jpg'),
+					linear-gradient(to right, transparent 0%, $primary-color-cyan 100%);
+			}
+		}
+	}
+	&__title {
+		color: $neutral-color-white;
+		font-weight: $font-weight-bold;
+		padding: 1rem 0;
+		@media (max-width: 23.45em) {
+			font-size: 2rem;
+			padding-top: 2rem;
+		}
+		&:hover {
+			color: $primary-color-cyan;
+			cursor: pointer;
+		}
+	}
+	&__detail {
+		color: $primary-color-soft-blue;
+		font-size: $paragraph-font-size;
+		max-width: 80%;
+		@media (max-width: 23.45em) {
+			padding-top: 1rem;
+			padding-bottom: 1rem;
+			max-width: 100%;
+		}
+	}
+
+	&__information {
+		// display: inline-block;
+		display: flex;
+		flex-direction: row;
+		margin: 1.2rem 0;
+		align-items: center;
+		justify-content: space-between;
+		&--price {
+			color: $primary-color-cyan;
+			margin: auto 0;
+			&--image {
+				height: auto;
+			}
+			span {
+				font-weight: $font-weight-bold;
+			}
+			@media (max-width: 23.45em) {
+				font-size: $paragraph-font-size;
+			}
+		}
+		&--date {
+			color: $primary-color-soft-blue;
+
+			span {
+				font-weight: $font-weight-normal;
+			}
+			@media (max-width: 23.45em) {
+				font-size: $paragraph-font-size;
+			}
+		}
+	}
+	&__creator {
+		color: $primary-color-soft-blue;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-around;
+		justify-content: flex-start;
+		&--image {
+			border: 1px solid $neutral-color-white;
+			border-radius: 50%;
+			width: 15%;
+			margin: 1rem 1rem 1rem 0;
+		}
+		&--information {
+			span {
+				color: $neutral-color-white;
+				&:hover {
+					color: $primary-color-cyan;
+					cursor: pointer;
+				}
+			}
+			@media (max-width: 23.45em) {
+				font-size: $paragraph-font-size;
+			}
+		}
+	}
+
+	&__seperator {
+		width: 100%;
+		height: 2px;
+		background-color: $neutral-color-line-bg;
+		margin: 0.75rem auto;
+	}
+}
